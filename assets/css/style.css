@@ -1,0 +1,59 @@
+body {
+    background-image: url("../images/lvivstation.jpg");
+    font-weight: bolder;
+    margin-top: 25px;
+           min-height: 500px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+
+.jumbotron {
+    
+    background-color: blue;
+    color: yellow;
+    border: solid 3px yellow;
+}
+
+
+
+.col-sm-12 {
+    
+    opacity: 0.9;
+}
+.panel-title {
+    color: blue;
+    font-weight: bold;
+
+}
+thead {
+    color: blue;
+    font-weight: bold;
+}
+label {
+    color: blue;
+    font-weight: bold;
+}
+
+.panel-warning {
+    color:black;
+}
+
+.panel {
+    background-color: white;
+    
+}
+
+button#submitTrain {
+    
+    background-color: blue;
+    outline: none;
+}
+
