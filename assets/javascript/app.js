@@ -9,20 +9,20 @@
   };
   firebase.initializeApp(config);
 
-// Create a variable to reference the database
+// reference the database
 var database = firebase.database();
 
-// Capture Button Click
+//  Button Click
 $("#submitTrain").on("click", function() {
 
-	//Create variables to hold user input
+	//variables to hold user input
 	var trainNameInput = $('#trainNameInput').val().trim();
 	var destinationInput = $('#destinationInput').val().trim();
 	var startTimeInput = $('#startTimeInput').val().trim();
 	var frequencyInput = $('#frequencyInput').val().trim();
 
 
-	//if the input fields are not empty
+	//if the input is not empty
 	if( trainNameInput != "" &&
 		destinationInput != "" &&
 		startTimeInput != "" &&
@@ -34,7 +34,7 @@ database.ref().push({
 	startTime: startTimeInput,
 	frequency: frequencyInput
 });  
-document.getElementById("#submitTrain").value = '';
+$("#submitTrain").value = '';
 }
 	//otherwise don't submit
 	else {
